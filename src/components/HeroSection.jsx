@@ -5,10 +5,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { SLIDES_DATA } from "../utils/helper";
 
-const HeroSlider = () => {
+const HeroSection = () => {
   return (
     <Swiper
-      modules={[Pagination, Autoplay]}
+      modules={[Pagination, Autoplay,]}
       pagination={{ clickable: true }}
       autoplay={{ delay:3000, disableOnInteraction: false }}
       loop={true}
@@ -20,7 +20,7 @@ const HeroSlider = () => {
             <img
               src={slide.img}
               alt={slide.title}
-              className="absolute inset-0 w-full h-full object-cover rounded-xl"
+              className="absolute inset-0 w-full h-full object-cover rounded-xl mt-10"
             />
             <div className="relative z-10 max-w-3xl px-6 text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0f2745] leading-tight">
@@ -45,4 +45,4 @@ const HeroSlider = () => {
   );
 };
 
-export default HeroSlider;
+export default HeroSection;

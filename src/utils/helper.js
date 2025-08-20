@@ -1,5 +1,17 @@
- import alive from "../assets/images/heroimage.png";
- export const MENU_ITEMS = [
+import sensor from "../assets/images/sensor.png";
+import pcpart from "../assets/images/pcpart.png";
+import diytool from "../assets/images/diy.png";
+import cable from "../assets/images/cable.png";
+import gaming from "../assets/images/game.png";
+import pitool from "../assets/images/pitool.png";
+
+import alive from "../assets/images/heroimage.png";
+
+import vortex from "../assets/images/gamingpc.png";
+import router from "../assets/images/router.png";
+import chair from "../assets/images/gamingchair.png";
+
+export const MENU_ITEMS = [
   { name: "Categories", link: "#" },
   {
     name: "PC Products",
@@ -17,7 +29,7 @@
   { name: "Contact", link: "#" },
 ];
 
- export const SLIDES_DATA = [
+export const SLIDES_DATA = [
   {
     img: alive,
     title: "Where Tinkerers Bring Ideas Alive",
@@ -32,5 +44,61 @@
     img: alive,
     title: "Gear Up for Your Next Project",
     desc: "From gaming accessories to pro tools, find everything here.",
+  },
+];
+
+export const CATEGORY_DATA = [
+  {
+    name: "Sensors & Modules",
+    image: sensor,
+    bg: "bg-[#D5E8FF]",
+  },
+  {
+    name: "Custom PC Parts",
+    image: pcpart,
+    bg: "bg-[#EEF4FB]",
+  },
+  {
+    name: "DIY Tools",
+    image: diytool,
+    bg: "bg-[#E5E4E2]",
+  },
+  {
+    name: "Cables & Connectors",
+    image: cable,
+    bg: "bg-[#EEF4FB]",
+  },
+  {
+    name: "Gaming Peripherals",
+    image: gaming,
+    bg: "bg-[#E5E4E2]",
+  },
+  {
+    name: "Raspberry Pi Kits",
+    image: pitool,
+    bg: "bg-[#D5E8FF]",
+  },
+];
+
+export const PRODUCT_DATA = [
+  {
+    id: 1,
+    name: "Vortex Gaming PC",
+    price: 249.99,
+    image: vortex,
+  
+  },
+  {
+    id: 2,
+    name: "D-Link ADSL Wireless Router DSL2790U",
+    price: 249.99,
+    image: router,
+  
+  },
+  {
+    id: 3,
+    name: "Gaming Chair",
+    price: 249.99,
+    image: chair,
   },
 ];
