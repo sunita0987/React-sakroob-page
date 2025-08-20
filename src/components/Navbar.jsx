@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
           <div className="flex items-center">
-            <img src={logo} alt="logo" className="h-10 w-auto" />
+            <img src={logo} alt="logo" className="h-10 w-auto " />
           </div>
           <div className="hidden md:flex space-x-6 items-center">
             {MENU_ITEMS.map((item, idx) => (
@@ -65,7 +65,7 @@ const Navbar = () => {
             <div key={idx} className="border-b border-gray-600 pb-2">
               <a
                 href={item.link}
-                className="block hover:text-blue-400 flex items-center"
+                className="block hover:text-blue-400  items-center"
               >
                 {item.name}
                 {item.dropdown && <FaChevronDown className="ml-1 text-sm" />}
