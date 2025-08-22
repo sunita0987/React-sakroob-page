@@ -83,22 +83,41 @@ export const CATEGORY_DATA = [
 export const PRODUCT_DATA = [
   {
     id: 1,
-    name: "Vortex Gaming PC",
+    title: "Vortex Gaming PC",
+    description: "High performance gaming PC for ultimate experience.",
     price: 249.99,
     image: vortex,
-  
   },
   {
     id: 2,
-    name: "D-Link ADSL Wireless Router DSL2790U",
+    title: "D-Link ADSL Router",
+    description: "Reliable wireless router with fast connectivity.",
     price: 249.99,
     image: router,
-  
   },
   {
     id: 3,
-    name: "Gaming Chair",
+    title: "Gaming Chair",
+    description: "Ergonomic chair for comfortable gaming sessions.",
     price: 249.99,
     image: chair,
   },
 ];
+
+
+//  export const CART_PAGE = [
+//     {
+//       id: 1,
+//       title: "Gaming Chair",
+//       price: 249.99,
+//       image: chair,
+//       quantity: 1,
+//     },
+//     {
+//       id: 2,
+//       title: "Gaming Peripherals",
+//       price: 449.99,
+//       image: game,
+//       quantity: 1,
+//     },
+//   ];

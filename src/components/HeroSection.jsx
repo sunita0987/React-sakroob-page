@@ -8,9 +8,9 @@ import { SLIDES_DATA } from "../utils/helper";
 const HeroSection = () => {
   return (
     <Swiper
-      modules={[Pagination, Autoplay,]}
+      modules={[Pagination, Autoplay]}
       pagination={{ clickable: true }}
-      autoplay={{ delay:3000, disableOnInteraction: false }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
       loop={true}
       className="w-full h-[500px] relative"
     >

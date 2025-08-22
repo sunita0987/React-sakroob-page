@@ -8,26 +8,34 @@ import Slider from "./components/Slider";
 import HeroSection from "./components/HeroSection";
 import Feature from "./components/Feature";
 import PopularProduct from "./components/PopularProduct";
+import Home from "./Page/Home";
 import ProductPage from "./Page/ProductPage";
-import BestSellers from "./components/BestSellers"
+// import BestSellers from "./components/BestSellers";
+import CartPage from "./Page/CartPage";
+import CheckoutPage from "./Page/CheckOutPage";
+// import { CartProvider } from "./Context/CartContext";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Search />
-      <Slider />
-      <HeroSection />
-      <Feature />
+      <>
+        <Navbar />
+        <Search />
+        <Slider />
+        <HeroSection />
+        <Feature />
       <PopularProduct />
+      {/* <BestSellers /> */}
      
       <Router>
         <Routes>
-          <Route path="/" element={<BestSellers />} />
+          <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
       </Router>
-    </>
+   </>
+   
   );
 }
 
