@@ -11,6 +11,14 @@ import vortex from "../assets/images/gamingpc.png";
 import router from "../assets/images/router.png";
 import chair from "../assets/images/gamingchair.png";
 
+import build from "../assets/images/photoroom.png";
+import Electronics from "../assets/images/yellowtools.png";
+import tool from "../assets/images/motherboard.png";
+
+import ceo from "../assets/images/willamgate.png";
+import manager from "../assets/images/streward.png";
+import developer from "../assets/images/willamgate.png";
+
 export const MENU_ITEMS = [
   { name: "Categories", link: "#" },
   {
@@ -104,20 +112,45 @@ export const PRODUCT_DATA = [
   },
 ];
 
+export const BLOG_DATA = [
+  {
+    title: "How to Build a Mini NAS",
+    description:
+      "Learn to build your own network storage system with simple components.",
+    image: build,
+    buttonText: "Read Guide →",
+  },
+  {
+    title: "5 Tools Every Maker Should Own",
+    description: "The essential toolkit for every DIY electronics enthusiast.",
+    image: Electronics,
+    buttonText: "Read Article →",
+  },
+  {
+    title: "Inside a Raspberry Pi Retro Console",
+    description: "Step-by-step log of building a retro game machine.",
+    image: tool,
+    buttonText: "View Build Log →",
+  },
+];
 
-//  export const CART_PAGE = [
-//     {
-//       id: 1,
-//       title: "Gaming Chair",
-//       price: 249.99,
-//       image: chair,
-//       quantity: 1,
-//     },
-//     {
-//       id: 2,
-//       title: "Gaming Peripherals",
-//       price: 449.99,
-//       image: game,
-//       quantity: 1,
-//     },
-//   ];
+export const TESTIMONIAL_DATA = [
+  {
+    name: "William Gate",
+    role: "CEO",
+    image: ceo,
+    text: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.",
+  },
+  {
+    name: "Darrell Steward",
+    role: "Manager",
+    image: manager,
+    text: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.",
+  },
+  {
+    name: "Jenny Wilson",
+    role: "Developer",
+    image: developer,
+    text: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.",
+  },
+];

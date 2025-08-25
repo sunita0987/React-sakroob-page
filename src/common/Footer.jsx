@@ -4,11 +4,10 @@ import footerlogo from "../assets/images/sakroob.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#112D49] text-white py-10">
+    <footer className="bg-[#112D49] text-white py-30">
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center space-y-6">
-        {/* Logo */}
         <div className="flex flex-col items-center space-y-2">
-          <img src={footerlogo} alt="Logo" className="" />
+          <img src={footerlogo} alt="Logo" className=" mt-20" />
           <p className="text-gray-300 text-sm max-w-md">
             Commodo egestas etiam arcu curabitur aliquam volutpat a gravida.
           </p>

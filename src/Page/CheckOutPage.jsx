@@ -41,7 +41,7 @@ const CheckoutPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      alert("✅ Form submitted successfully!");
+      alert(" Form submitted successfully!");
       console.log("Form Data:", form, "Payment:", paymentMethod);
     }
   };
@@ -70,13 +70,13 @@ const CheckoutPage = () => {
             </div>
             <button
               type="button"
-              className="px-6 py-2 bg-gray-800 text-white rounded cursor-pointer"
+              className=" bg-gray-800  px-10 text-[#ffffff] rounded-full cursor-pointer"
             >
-              Log in
+              Submit
             </button>
           </div>
         </div>
-        <div className="bg-white shadow rounded-lg p-6">
+        <div className="bg-[#ffffff] shadow rounded-lg p-6">
           <h2 className="text-lg font-semibold mb-4">Delivery</h2>
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
@@ -152,14 +152,14 @@ const CheckoutPage = () => {
             Save this information for next time
           </label>
         </div>
-        <div className="bg-white shadow rounded-lg p-6">
+        <div className="bg-[#ffffff] shadow rounded-lg p-6">
           <h2 className="text-lg font-semibold mb-4">Shipping method</h2>
           <div className="flex justify-between items-center border rounded px-4 py-2">
             <p>Standard (Example)</p>
             <p className="font-medium">AED 20.00</p>
           </div>
         </div>
-        <div className="bg-white shadow rounded-lg p-6">
+        <div className="bg-[#ffffff] shadow rounded-lg p-6">
           <h2 className="text-lg font-semibold mb-4">Payment</h2>
           <p className="text-sm text-gray-500 mb-4">
             All transactions are secure and encrypted.
@@ -223,12 +223,12 @@ const CheckoutPage = () => {
         </div>
         <button
           type="submit"
-          className="w-50 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 cursor-pointer"
+          className="w-50 py-3 bg-blue-600 text-[#ffffff] rounded-lg font-medium hover:bg-blue-700 cursor-pointer"
         >
           Place Order
         </button>
       </div>
-      <div className=" bg-white shadow-lg rounded-2xl p-6 space-y-6">
+      <div className=" bg-[#ffffff] shadow-lg rounded-2xl p-6 space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative">
@@ -237,7 +237,7 @@ const CheckoutPage = () => {
                 alt="Gaming Chair"
                 className="w-12 h-12 rounded-md"
               />
-              <span className="absolute -top-2 -right-2 bg-gray-800 text-white text-xs px-2 py-0.5 rounded-full">
+              <span className="absolute -top-2 -right-2 bg-gray-800 text-[#ffffff] text-xs px-2 py-0.5 rounded-full">
                 1
               </span>
             </div>
@@ -254,7 +254,7 @@ const CheckoutPage = () => {
             placeholder="Coupon code"
             className="flex-1 border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300"
           />
-          <button className="px-4 py-2 bg-white border border-gray-400 rounded-xl text-sm font-medium hover:bg-gray-100">
+          <button className="px-4 py-2 bg-[#ffffff] border border-gray-400 rounded-xl text-sm font-medium hover:bg-gray-100">
             Apply Now
           </button>
         </div>
@@ -289,7 +289,7 @@ const CheckoutPage = () => {
             </select>
           </div>
         </div>
-        <button className="w-full py-3 bg-gray-900 text-white rounded-2xl font-medium hover:bg-gray-800">
+        <button className="w-full py-3 bg-gray-900 text-[#ffffff] rounded-2xl font-medium hover:bg-gray-800">
           Convert
         </button>
         <div className="flex justify-between font-semibold text-lg">

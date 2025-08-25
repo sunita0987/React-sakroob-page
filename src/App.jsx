@@ -1,7 +1,12 @@
 import { useState } from "react";
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Search from "./components/Serach";
 import Slider from "./components/Slider";
@@ -15,14 +20,11 @@ import CartPage from "./Page/CartPage";
 import CheckoutPage from "./Page/CheckOutPage";
 import Footer from "./common/Footer";
 import BacktoTop from "./common/Backtotop";
-// import { CartProvider } from "./Context/CartContext";
-import LoginPage from "./Page/LoginPage";
-import HomePage from "./Page/HomePage";
-
+import BlogSection from "./components/BlogSection";
+import Testimonial from "./components/Testimonial";
+import SakroobCircle from "./components/SakroobCircle";
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
   return (
     <>
       <Navbar />
@@ -31,35 +33,17 @@ function App() {
       <HeroSection />
       <Feature />
       <PopularProduct />
-      {/* <BestSellers /> */}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
-          <Route
-            path="/"
-            element={
-              isAuthenticated ? (
-                <HomePage />
-              ) : (
-                <LoginPage setIsAuthenticated={setIsAuthenticated} />
-              )
-            }
-          />
-          <Route
-          path="/home"
-          element={
-            isAuthenticated ? (
-              <HomePage />
-            ) : (
-              <Navigate to="/" replace />
-            )
-          }
-        />
         </Routes>
       </Router>
+      <BlogSection />
+      <Testimonial />
+      <SakroobCircle />
       <Footer />
       <BacktoTop />
     </>
