@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Search from "./components/Serach";
 import Slider from "./components/Slider";
@@ -17,30 +17,85 @@ import BacktoTop from "./common/Backtotop";
 import BlogSection from "./components/BlogSection";
 import Testimonial from "./components/Testimonial";
 import SakroobCircle from "./components/SakroobCircle";
+import LoginPage from "./components/LoginPage";
+import Register from "./components/Register";
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   return (
-    <>
-      <Navbar />
-      <Search />
-      <Slider />
-      <HeroSection />
-      <Feature />
-      <PopularProduct />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/product/:id" element={<ProductPage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
-        </Routes>
-      </Router>
-      <BlogSection />
-      <Testimonial />
-      <SakroobCircle />
-      <Footer />
-      <BacktoTop />
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          isAuthenticated ? (
+            <>
+              <Navbar />
+              <Search />
+              <Slider />
+              <HeroSection />
+              <Feature />
+              <PopularProduct />
+              <Home setIsAuthenticated={setIsAuthenticated} />
+              <BlogSection />
+              <Testimonial />
+              <SakroobCircle />
+              <Footer />
+              <BacktoTop />
+            </>
+          ) : (
+            <Navigate to="/loginPage" />
+          )
+        }
+      />
+      <Route
+        path="/product/:id"
+        element={
+          isAuthenticated ? (
+            <>
+              <Navbar />
+              <ProductPage />
+              <Footer />
+            </>
+          ) : (
+            <Navigate to="/loginPage" />
+          )
+        }
+      />
+      <Route
+        path="/cart"
+        element={
+          isAuthenticated ? (
+            <>
+              <Navbar />
+              <CartPage />
+              <Footer />
+            </>
+          ) : (
+            <Navigate to="/loginPage" />
+          )
+        }
+      />
+      <Route
+        path="/checkout"
+        element={
+          isAuthenticated ? (
+            <>
+              <Navbar />
+              <CheckoutPage />
+              <Footer />
+            </>
+          ) : (
+            <Navigate to="/loginPage" />
+          )
+        }
+      />
+      <Route
+        path="/loginPage"
+        element={<LoginPage setIsAuthenticated={setIsAuthenticated} />}
+      />
+      <Route path="/register" element={<Register />} />
+    </Routes>
   );
 }
 

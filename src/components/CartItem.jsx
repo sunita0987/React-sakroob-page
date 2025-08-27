@@ -6,7 +6,6 @@ const CartItem = ({ product }) => {
 
   return (
     <div className="flex items-center justify-between border-b py-4">
-      {/* Product Info */}
       <div className="flex items-center gap-4">
         <img
           src={product.image}
