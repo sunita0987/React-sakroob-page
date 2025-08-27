@@ -19,6 +19,10 @@ import ceo from "../assets/images/willamgate.png";
 import manager from "../assets/images/streward.png";
 import developer from "../assets/images/willamgate.png";
 
+import cleancable from "../assets/images/nzxt.png";
+import ultra from "../assets/images/msi.png";
+import design from "../assets/images/fan.png";
+
 export const MENU_ITEMS = [
   { name: "Categories", link: "#" },
   {
@@ -152,5 +156,32 @@ export const TESTIMONIAL_DATA = [
     role: "Developer",
     image: developer,
     text: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.",
+  },
+];
+
+export const REVIEW_DATA = [
+  {
+    id: 1,
+    name: "NZXT H510 Elite PC Case",
+    desc: "Tempered glass case with clean cable management and optimized airflow.",
+    price: "$249.99",
+    rating: 5,
+    img: cleancable,
+  },
+  {
+    id: 2,
+    name: "MSI GeForce RTX 4070 GPU",
+    desc: "Ray tracing, AI-powered DLSS, and ultra-performance — redefine how you game.",
+    price: "$349.99",
+    rating: 5,
+    img: ultra,
+  },
+  {
+    id: 3,
+    name: "Gaming Chair",
+    desc: "Ergonomic design with adjustable armrests and lumbar support.",
+    price: "$259.99",
+    rating: 5,
+    img: design,
   },
 ];

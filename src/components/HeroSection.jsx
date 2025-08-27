@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { SLIDES_DATA } from "../utils/helper";
 
-
 const HeroSection = () => {
   return (
     <Swiper

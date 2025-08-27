@@ -1,5 +1,4 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 import bgImage from "../assets/images/empty-chair.jpg";
 
 const SakroobCircle = () => {

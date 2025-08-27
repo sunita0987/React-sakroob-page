@@ -1,12 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Search from "./components/Serach";
 import Slider from "./components/Slider";
@@ -15,7 +10,6 @@ import Feature from "./components/Feature";
 import PopularProduct from "./components/PopularProduct";
 import Home from "./Page/Home";
 import ProductPage from "./Page/ProductPage";
-// import BestSellers from "./components/BestSellers";
 import CartPage from "./Page/CartPage";
 import CheckoutPage from "./Page/CheckOutPage";
 import Footer from "./common/Footer";
@@ -24,7 +18,9 @@ import BlogSection from "./components/BlogSection";
 import Testimonial from "./components/Testimonial";
 import SakroobCircle from "./components/SakroobCircle";
 
+
 function App() {
+
   return (
     <>
       <Navbar />

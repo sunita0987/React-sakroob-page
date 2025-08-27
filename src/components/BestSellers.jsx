@@ -10,8 +10,14 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="bg-[#ffffff] shadow-md rounded-2xl p-4 flex flex-col items-center text-center">
-      <img src={product.image} alt={product.title} className="h-40 object-contain bg-[#E5E4E2] hover:bg-[#EEF4FB] cursor-pointer" />
-      <h3 className="text-lg font-semibold mt-3 text-[#112D49]">{product.title}</h3>
+      <img
+        src={product.image}
+        alt={product.title}
+        className="h-40 object-contain bg-[#E5E4E2] hover:bg-[#EEF4FB] cursor-pointer"
+      />
+      <h3 className="text-lg font-semibold mt-3 text-[#112D49]">
+        {product.title}
+      </h3>
       <p className="text-[#112D49] opacity-80 text-sm">{product.description}</p>
       <p className="text-xl font-bold mt-2">${product.price}</p>
       <button

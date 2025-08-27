@@ -34,12 +34,24 @@ const ProductPage = () => {
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-80 object-contain mb-4"
+          className="w-full h-100 object-contain mb-4 bg-[#EEF4FB] rounded-xl"
         />
-        <div className="flex gap-3">
-          <img src={product.image} alt="" className="h-20 border p-2 rounded" />
-          <img src={product.image} alt="" className="h-20 border p-2 rounded" />
-          <img src={product.image} alt="" className="h-20 border p-2 rounded" />
+        <div className="flex gap-5 ">
+          <img
+            src={product.image}
+            alt=""
+            className="h-20  p-2 rounded  bg-[#F5F5F5]"
+          />
+          <img
+            src={product.image}
+            alt=""
+            className="h-20  p-2 rounded bg-[#F5F5F5]"
+          />
+          <img
+            src={product.image}
+            alt=""
+            className="h-20  p-2 rounded bg-[#F5F5F5]"
+          />
         </div>
       </div>
       <div>
@@ -64,17 +76,17 @@ const ProductPage = () => {
         </div>
         <div className="mb-6">
           <p className="font-semibold mb-2">Select Quantity</p>
-          <div className="flex items-center border w-32 rounded-full justify-between">
+          <div className="flex items-center border w-32 rounded-full justify-between ">
             <button
               onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
-              className="px-3 py-1 cursor-pointer"
+              className="px-3 py-1 cursor-pointer border-r-1 "
             >
               -
             </button>
             <span>{quantity}</span>
             <button
               onClick={() => setQuantity(quantity + 1)}
-              className="px-3 py-1 cursor-pointer"
+              className="px-3 py-1 cursor-pointer border-l-1"
             >
               +
             </button>
