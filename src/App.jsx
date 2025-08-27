@@ -17,9 +17,6 @@ import BacktoTop from "./common/Backtotop";
 import BlogSection from "./components/BlogSection";
 import Testimonial from "./components/Testimonial";
 import SakroobCircle from "./components/SakroobCircle";
-import Login from "./Page/LoginPage";
-import Dashboard from "./Page/DashBoard";
-import ProtectedRoute from "./Routes/ProtectedRoute";
 
 function App() {
   return (
@@ -32,19 +29,10 @@ function App() {
       <PopularProduct />
       <Router>
         <Routes>
-          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
-          <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute>
-                <Dashboard />
-              </ProtectedRoute>
-            }
-          />
         </Routes>
       </Router>
       <BlogSection />

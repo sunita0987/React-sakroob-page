@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { PRODUCT_DATA } from "../utils/helper";
+// import { POPULAR_DATA } from "../utils/helper";
 
 const ProductPage = () => {
   const { id } = useParams();

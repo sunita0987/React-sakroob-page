@@ -26,7 +26,7 @@ const SakroobCircle = () => {
             <input
               type="email"
               placeholder="Enter your email..."
-              className="bg-white py-[13.35px] sm:py-[22px] px-[18px] rounded-[50px] max-w-[489px] w-full leading-[140%] text-[#8392A0] border border-transparent focus:outline-none focus:border-blue-500"
+              className="bg-[#ffffff] py-[13.35px] sm:py-[22px] px-[18px] rounded-[50px] max-w-[489px] w-full leading-[140%] text-[#8392A0] border border-transparent focus:outline-none focus:border-blue-500"
             />
             <button className="!py-[16px] !px-[20px] min-[425px] sm:absolute right-20 bg-[#112D49] rounded-full top-49 text-white max-sm:w-full max-sm:mt-4 hover:text-[#112D49] hover:bg-white cursor-pointer">
               Join Now

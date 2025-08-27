@@ -185,3 +185,27 @@ export const REVIEW_DATA = [
     img: design,
   },
 ];
+
+// export const POPULAR_DATA = [
+//   {
+//     id: 1,
+//     name: "NZXT H510 Elite PC Case",
+//     price: 249.99,
+//     img: cleancable,
+//     rating: 5,
+//   },
+//   {
+//     id: 2,
+//     name: "MSI GeForce RTX 4070 GPU",
+//     price: 349.99,
+//     img: ultra,
+//     rating: 4.5,
+//   },
+//   {
+//     id: 3,
+//     name: "Gaming Chair",
+//     price: 259.99,
+//     img: design,
+//     rating: 4,
+//   },
+// ];

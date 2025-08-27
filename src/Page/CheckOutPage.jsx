@@ -52,7 +52,7 @@ const CheckoutPage = () => {
       className="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-8"
     >
       <div className="lg:col-span-2 space-y-6">
-        <div className="bg-white shadow rounded-lg p-6">
+        <div className="bg-[#ffffff] shadow rounded-lg p-6">
           <h2 className="text-lg font-semibold mb-4">Contact</h2>
           <div className="flex gap-4">
             <div className="w-full">
@@ -223,7 +223,7 @@ const CheckoutPage = () => {
         </div>
         <button
           type="submit"
-          className="w-50 py-3 bg-[#112D49] text-[#ffffff] rounded-lg font-medium hover:bg-[#ffffff]  hover:text-[#112D49] cursor-pointer"
+          className="w-50 py-3 bg-[#112D49] text-[#ffffff] rounded-lg font-medium  cursor-pointer hover:bg-gray-950"
         >
           Place Order
         </button>
@@ -254,7 +254,7 @@ const CheckoutPage = () => {
             placeholder="Coupon code"
             className="flex-1 border border-gray-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300"
           />
-          <button className="px-4 py-2 bg-[#ffffff] border border-gray-400 rounded-xl text-sm font-medium hover:bg-gray-100">
+          <button className="px-4 py-2 bg-[#ffffff] border border-gray-400 rounded-xl text-sm font-medium hover:bg-gray-100 cursor-pointer">
             Apply Now
           </button>
         </div>
@@ -289,7 +289,7 @@ const CheckoutPage = () => {
             </select>
           </div>
         </div>
-        <button className="w-full py-3 bg-gray-900 text-[#ffffff] rounded-2xl font-medium hover:bg-gray-800">
+        <button className="w-full py-3 bg-gray-900 text-[#ffffff] rounded-2xl font-medium hover:bg-gray-800 cursor-pointer">
           Convert
         </button>
         <div className="flex justify-between font-semibold text-lg">
