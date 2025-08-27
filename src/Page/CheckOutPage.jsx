@@ -223,7 +223,7 @@ const CheckoutPage = () => {
         </div>
         <button
           type="submit"
-          className="w-50 py-3 bg-blue-600 text-[#ffffff] rounded-lg font-medium hover:bg-blue-700 cursor-pointer"
+          className="w-50 py-3 bg-[#112D49] text-[#ffffff] rounded-lg font-medium hover:bg-[#ffffff]  hover:text-[#112D49] cursor-pointer"
         >
           Place Order
         </button>
