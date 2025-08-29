@@ -32,7 +32,7 @@ const Navbar = () => {
                   )}
                 </a>
                 {item.dropdown && (
-                  <div className="absolute left-0 top-full mt-2 w-40 bg-white text-black rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute left-0 top-full mt-2 w-40 bg-[#ffffff] text-[#000000] rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
                     {item.dropdown.map((sub, i) => (
                       <a
                         key={i}

@@ -47,7 +47,7 @@ const BlogSection = () => {
         </div>
       </div>
       <div className="flex justify-center mt-10">
-        <button className="px-6 py-3 bg-[#112D49] text-white font-medium rounded-full  transition cursor-pointer">
+        <button className="px-6 py-3 bg-[#112D49] text-[#ffffff] font-medium rounded-full  transition cursor-pointer">
           View All Blog Posts
         </button>
       </div>

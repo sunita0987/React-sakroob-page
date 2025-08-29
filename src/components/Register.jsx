@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import bgimage from "../assets/images/loginbgimg.png";
-import { EyeIcon, EyeOffIcon } from "lucide-react"; 
+import { EyeIcon, EyeOffIcon } from "lucide-react";
 
 export default function Signup() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); 
+  const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
 
@@ -33,7 +33,7 @@ export default function Signup() {
         backgroundImage: `url(${bgimage})`,
       }}
     >
-      <div className="bg-white shadow-lg rounded-2xl p-8 max-w-100">
+      <div className="bg-[#ffffff] shadow-lg rounded-2xl p-8 max-w-100">
         <h2 className="text-2xl font-bold text-center mb-2">Sign up</h2>
         <p className="text-sm text-gray-500 text-center mb-6">
           Create your account to unlock access and stay updated with everything
@@ -85,7 +85,7 @@ export default function Signup() {
 
           <button
             type="submit"
-            className="bg-[#112D49] text-white py-2 rounded-full cursor-pointer"
+            className="bg-[#112D49] text-[#ffffff] py-2 rounded-full cursor-pointer"
           >
             Sign up
           </button>

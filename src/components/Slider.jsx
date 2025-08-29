@@ -20,9 +20,9 @@ const Slider = () => {
         {categories.map((cat, index) => (
           <div
             key={index}
-            className="flex flex-col items-center  justify-center  bg-white rounded-xl  px-10 py-1 mx-3 max-w-[300px] shadow-md text-center hover:scale-105 transition-transform"
+            className="flex flex-col items-center  justify-center  bg-[#ffffff] rounded-xl  px-10 py-1 mx-3 max-w-[300px] shadow-md text-center hover:scale-105 transition-transform"
           >
-            <div className="bg-[#112D49] text-white text-3xl p-4 rounded-full mb-2 ">
+            <div className="bg-[#112D49] text-[#ffffff] text-3xl p-4 rounded-full mb-2 ">
               {cat.icon}
             </div>
             <p className="text-sm  font-medium text-gray-800">{cat.label}</p>
