@@ -25,7 +25,6 @@ const CheckoutPage = () => {
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
       newErrors.email = "Enter a valid email address";
     }
-
     if (!form.firstName.trim()) newErrors.firstName = "First name is required";
     if (!form.lastName.trim()) newErrors.lastName = "Last name is required";
     if (!form.address.trim()) newErrors.address = "Address is required";
@@ -49,7 +48,7 @@ const CheckoutPage = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-8"
+      className="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10"
     >
       <div className="lg:col-span-2 space-y-6">
         <div className="bg-[#ffffff] shadow rounded-lg p-6">

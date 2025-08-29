@@ -12,6 +12,7 @@ const categories = [
   { icon: <FaDesktop />, label: "Monitors" },
 ];
 
+
 const Slider = () => {
   return (
     <div className="w-full  py-4">

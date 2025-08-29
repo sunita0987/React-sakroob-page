@@ -74,6 +74,9 @@ const ProductPage = () => {
               ></button>
             ))}
           </div>
+
+
+
         </div>
         <div className="mb-6">
           <p className="font-semibold mb-2">Select Quantity</p>

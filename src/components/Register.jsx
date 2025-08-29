@@ -1,70 +1,106 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import bgimage from "../assets/images/loginbgimg.png";
+import { EyeIcon, EyeOffIcon } from "lucide-react"; 
 
-const Signup = () => {
-  const [showPassword, setShowPassword] = useState(false);
+export default function Signup() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false); 
+
+  const navigate = useNavigate();
+
+  const handleSignup = (e) => {
+    e.preventDefault();
+    if (firstName && lastName && email && password) {
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ firstName, lastName, email, password })
+      );
+      alert("Account created successfully!");
+      navigate("/LoginPage");
+    } else {
+      alert("Please fill all fields");
+    }
+  };
 
   return (
     <div
-      className="relative  min-h-screen bg-cover bg-no-repeat bg-center flex  justify-center items-center flex-col"
+      className="relative min-h-screen bg-cover bg-no-repeat bg-center flex justify-center items-center flex-col"
       style={{
         backgroundImage: `url(${bgimage})`,
       }}
     >
-      <div className="bg-white p-8 rounded-2xl shadow-md w-full max-w-100 ">
-        <h2 className="text-2xl font-bold text-center mb-2 text-[#112D49]">Sign up</h2>
-        <p className="text-gray-600 text-center mb-6">
+      <div className="bg-white shadow-lg rounded-2xl p-8 max-w-100">
+        <h2 className="text-2xl font-bold text-center mb-2">Sign up</h2>
+        <p className="text-sm text-gray-500 text-center mb-6">
           Create your account to unlock access and stay updated with everything
           we offer.
         </p>
-        <form className="space-y-4">
+
+        <form onSubmit={handleSignup} className="flex flex-col gap-4">
           <input
             type="text"
             placeholder="First name"
-            className="w-full px-4 py-2  rounded-full bg-gray-100 focus:outline-none"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            className="p-3 border-none rounded-full focus:outline-none bg-[#F4F8F7]"
           />
           <input
             type="text"
             placeholder="Last name"
-            className="w-full px-4 py-2  rounded-full bg-gray-100 focus:outline-none "
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className="p-3 border-none rounded-full focus:outline-none bg-[#F4F8F7]"
           />
           <input
             type="email"
             placeholder="Email address"
-            className="w-full px-4 py-2  rounded-full bg-gray-100 focus:outline-none "
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="p-3 border-none rounded-full focus:outline-none bg-[#F4F8F7]"
           />
-          <div className="relative">
+          <div className="relative w-full">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Password"
-              className="w-full px-4 py-2  rounded-full bg-gray-100 focus:outline-none"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="p-3 pr-10 border-none rounded-full focus:outline-none bg-[#F4F8F7] w-full"
             />
-            <span
-              className="absolute right-4 top-2.5 cursor-pointer text-gray-500"
+            <button
+              type="button"
               onClick={() => setShowPassword(!showPassword)}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-[#3F566B]"
             >
-              {showPassword ? " " : ""}
-            </span>
+              {showPassword ? (
+                <EyeOffIcon className="w-5 h-5" />
+              ) : (
+                <EyeIcon className="w-5 h-5" />
+              )}
+            </button>
           </div>
+
           <button
             type="submit"
-            className="w-full py-2 bg-[#112D49] text-white rounded-full font-medium cursor-pointer transition"
+            className="bg-[#112D49] text-white py-2 rounded-full cursor-pointer"
           >
             Sign up
           </button>
         </form>
-        <p className="text-sm text-gray-600 text-center mt-4">
+
+        <p className="text-sm text-center mt-4">
           Already a member?
-          <a
-            href="/loginPage"
-            className="text-[#112d49] font-medium underline"
+          <span
+            onClick={() => navigate("/LoginPage")}
+            className="text-[#112D49] underline font-bold cursor-pointer"
           >
             Log in
-          </a>
+          </span>
         </p>
       </div>
     </div>
   );
-};
-
-export default Signup;
+}

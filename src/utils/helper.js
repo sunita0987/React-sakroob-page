@@ -35,7 +35,7 @@ export const MENU_ITEMS = [
     link: "#",
     dropdown: ["Diy services"],
   },
-  { name: "Support", link: "#", dropdown: ["FAQ’s", "Returns", "Contact"] },
+  { name: "Support", link: "#", dropdown: ["FAQ's", "Returns", "Contact"] },
   { name: "About", link: "#" },
   { name: "Blog", link: "#" },
   { name: "Contact", link: "#" },

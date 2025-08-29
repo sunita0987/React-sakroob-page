@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center space-y-6">
         <div className="flex flex-col items-center space-y-2">
           <img src={footerlogo} alt="Logo" className=" mt-20" />
-          <p className="text-gray-300 text-sm max-w-md">
+          <p className="text-[#ffffff]  opacity-80 text-sm max-w-md">
             Commodo egestas etiam arcu curabitur aliquam volutpat a gravida.
           </p>
         </div>
@@ -79,3 +79,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+
